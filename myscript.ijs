@@ -11,9 +11,9 @@ negation=.-3
 power=.2^3
 square=.*:4
 square_vals=.*:1 2 3 4
-add_vals=.1 2 3 + 10 20 30
-add_vals2=.1+ 10 20 30
-add_vals3=.1 2 3 + 10
+add_vals=.1 2 3+10 20 30
+add_vals2=.1+10 20 30
+add_vals3=.1 2 3+10
 residue=.3|0 1 2 3 4 5 6 7
 order=.3*2+1
 order2=.1+3%4
@@ -42,7 +42,7 @@ larger_or_equal=.3>:1 3 5
 NB. -------------------------------
 NB. Chapter 2
 
-table=.2 3 $ 5 6 7 8 9 10
+table=.2 3$5 6 7 8 9 10
 add_table=.table+table
 mul_table=.10*table
 mul_rows=.0 1*table
