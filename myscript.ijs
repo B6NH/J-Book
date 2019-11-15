@@ -28,7 +28,7 @@ greater=.x>2
 all_greater=.*/x>2
 count_greater=.+/x>2
 count_all=.+/x=x
-count_all2=.#x
+tally=.#x
 y=.6 7 8 9 10
 select=.1 1 0 1 0#y
 select_greater=.(y>7)#y
