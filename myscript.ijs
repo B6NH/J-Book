@@ -39,3 +39,13 @@ largest=.>./1 6 5
 increment=.>:_2 3 5 6.3
 larger_or_equal=.3>:1 3 5
 
+NB. -------------------------------
+NB. Chapter 2
+
+table=.2 3 $ 5 6 7 8 9 10
+add_table=.table+table
+mul_table=.10*table
+mul_rows=.0 1*table
+
+
+
