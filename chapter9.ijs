@@ -34,5 +34,85 @@ hr =. + (% & 60)
 
 10 (+ , -) 2
 
-NB. 9.5 Longer Trains
+y =. 2 3 4
+
+y - mean y
+
+(- mean) y
+
+(- (sum % #)) y
+
+(- sum % #) y
+
+date =. 28 2 1999
+
+Da =. 0 & {
+
+Mo =. 1 & {
+
+Yr =. 2 & {
+
+(Da , Mo , Yr) date
+
+(Mo ; Da ; Yr) date
+
+[ 99
+
+[ 'a b c'
+
+2 [ 3
+
+] 3
+
+2 ] 3
+
+(2 + 3) % (2 ] 3)
+
+2 (+ % ]) 3
+
+[ foo =. 42
+
+a =. 3 [ b =. 4 [ c =. 5
+
+a, b, c
+
+g =. ,
+
+h =. *:
+
+y =. 3
+
+([ g h) y
+
+([ y) g (h y)
+
+y g (h y)
+
+(g h) y
+
+f =. *:
+
+g =. ,
+
+(f g ]) y
+
+(f y) g (] y)
+
+(f y) g y
+
+(g~ f) y
+
+y (g~) (f y)
+
+(f y) g y
+
+f =. 'f' & ,
+
+g =. 'g' & ,
+
+foo =. (f @: [) , (g @: ])
+
+'a' foo 'b'
+
+NB. 9.7 The Capped Fork
 NB. ...
