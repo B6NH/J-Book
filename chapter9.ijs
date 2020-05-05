@@ -114,5 +114,68 @@ foo =. (f @: [) , (g @: ])
 
 'a' foo 'b'
 
-NB. 9.7 The Capped Fork
-NB. ...
+y =. 'y'
+
+f g y
+
+(f @: g) y
+
+([: f g) y
+
+h =. 'h' & ,
+
+(f , [: g h) y
+
+(f y) , (([: g h) y)
+
+(f y) , (g @: h y)
+
+(f y) , (g h y)
+
+'fy'  , 'ghy'
+
+0: 99
+
+0: 2 3 4
+
+88 0: 99
+
+1: 2 3 4
+
+7: 2 3 4
+
+_3: 2 3 4
+
+negative =. < 0:
+
+x =. _1 0 2
+
+0: x
+
+x < (0: x)
+
+negative x
+
+k =. 'hello'
+
+(3 : 'k') 1
+
+(3 : 'k') 1 2
+
+R =. 0
+
+((3 : 'k') " R) 1 2
+
+('hello' " R) 1 2
+
+Celsius =. ((5%9) & *) @: (- &32)
+
+Celsius 212
+
+Celsius =. (5%9 "_ ) * (-&32)
+
+Celsius 212
+
+Celsius =. (5%9) * (-&32)
+
+Celsius 212
