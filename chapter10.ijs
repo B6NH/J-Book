@@ -77,5 +77,87 @@ A2 =. (x - 1:) ACK (x ACK y - 1:)
 
 2 ACK 3
 
-NB. 10.3 Iteration
-NB. ...
++: +: +: 1
+
+(+: ^: 3 ) 1
+
+P =. 3 : '2.8  * y * (1 - y)'
+
+(P ^: 0 1 2 3    19 20 _) 0.5
+
++r =. (P ^: _) 0.5
+
+P r
+
+halve =. -:
+
+even  =. 0: = 2 & |
+
+foo =. halve ^: even
+
+(foo " 0) 1 2 3 4
+
+model =: 3 : 0
+  while. (even y)
+     do. y =.  halve y
+  end.
+  y
+)
+
+w =. (halve ^: even) ^: _
+
+model 48
+
+w 48
+
+(halve ^: even ^: _) 48
+
+((3&+) ^: 2) 0
+
+3 (+ ^: 2) 0
+
+e =. 3 : '(+/ y) % # y'
+
+t =. 13 : '(+/ y) % # y'
+
+e 1 2 3
+
+t 1 2 3
+
+ed =.  4 : 'y % x'
+
+td =. 13 : 'y % x'
+
+ed
+
+td
+
+2 ed 6
+
+2 td 6
+
+k =. 99
+
++p =. 3 : 'y+k'
+
++q =. 13 : 'y+k'
+
+p 6
+
+q 6
+
+k =. 0
+
+p 6
+
+q 6
+
+C =. @:
+
+g =. %:
+
++foo =. 13 : '(f C f y) , g y'
+
+f =. *:
+
+foo 4
