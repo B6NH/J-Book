@@ -10,7 +10,7 @@ scale 8
 
 z 2
 
-+ z =: (3 & +) @: *:
++ z =. (3 & +) @: *:
 
 z 2
 
@@ -30,7 +30,7 @@ g 8
 
 +h =. ytbd & (a%b)
 
-ytbd =: *
+ytbd =. *
 
 h 8
 
@@ -48,7 +48,7 @@ scale =. * & 2
 
 ctof 0 100
 
-CTOF =: 3 : 0
+CTOF =. 3 : 0
   shift =. + & 32
   scale =. * & (9 % 5)
   shift @ scale y
@@ -92,7 +92,7 @@ tP x
 
 lambda =. 3.5 " 0
 
-+tP =: lambda * ] * (1: - ])
++tP =. lambda * ] * (1: - ])
 
 tP x
 

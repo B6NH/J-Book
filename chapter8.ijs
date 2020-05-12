@@ -130,7 +130,7 @@ fooINV 8
 
 foo fooINV 36
 
-SQRT =: -: &. ^.
+SQRT =. -: &. ^.
 
 SQRT 16
 

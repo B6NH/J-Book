@@ -170,12 +170,12 @@ PD1 =. 4 : 0
 
 3 PD1 4
 
-PD2 =: 4 : 0
+PD2 =. 4 : 0
   w =. x - y
   if. x > y do. w else. - w end.
 )
 
-3 PD 4
+3 PD2 4
 
 foo =. 3 : 'if.  y do. ''yes''  else. ''no''  end.'
 
@@ -242,7 +242,7 @@ PD =. 4 : 0
 
 3 PD 4
 
-class =: 3 : 0
+class =. 3 : 0
   t =. 4 !: 0 < y
   if.     t = 0 do. 'noun'
   elseif. t = 1 do. 'adverb'
@@ -258,7 +258,7 @@ class 'verb'
 
 class 'oops'
 
-CLASS =: 3 : 0
+CLASS =. 3 : 0
   select.  4 !: 0 < y
   case. 0 do. 'noun'
   case. 1 do. 'adverb'
@@ -272,7 +272,7 @@ CLASS 'CLASS'
 
 CLASS 'abc'
 
-Clss =: 3 : 0
+Clss =. 3 : 0
   select.  4 !: 0 < y
   case. 0    do. 'noun'
   case. 1;2  do. 'operator'
@@ -323,7 +323,7 @@ f4 =. 3 : 0
 
 f4 'hello'
 
-test =: 3 : 0
+test =. 3 : 0
     if. 4 = 3 !:0 y  do.
         if. 0 = # $ y  do.
             100 > | y

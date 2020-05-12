@@ -90,7 +90,7 @@ table =. ArrayMaker 0 : 0
   7 8 9
 )
 
-arrayOfBoxes =:  ArrayMaker  0 : 0
+arrayOfBoxes =.  ArrayMaker  0 : 0
   'hello' ; 1 2 3 ; 8
   'World' ; 4 5 6 ; 9
 )

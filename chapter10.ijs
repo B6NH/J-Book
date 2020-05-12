@@ -101,7 +101,7 @@ foo =. halve ^: even
 
 (foo " 0) 1 2 3 4
 
-model =: 3 : 0
+model =. 3 : 0
   while. (even y)
      do. y =.  halve y
   end.
