@@ -74,5 +74,66 @@ p =. _1 0 1 & p.
 
 p x
 
-NB. 21.2.2 Roots
-NB. ...
+C
+
+p =. C & p.
+
+p
+
+Z =. p. C
+
+Z
+
+'M R' =. Z
+
+R
+
+p R
+
+MR =. p. C
+
+MR
+
+p. MR
+
+p =. (1; 2 3) & p.
+
+p
+
+p 2 3
+
+C
+
+MR
+
+MR p. x
+
+C p. x
+
+coeffs =. _1 1
+
+exps =. 0 2
+
+pairs =. coeffs ,. exps
+
+x
+
+pairs
+
+(< pairs) p. x
+
+_1 0 1 p. x
+
+E =. 0.5 _1 2j3
+
+C =. 1 1 1
+
+f =. (< C,.E) & p.
+
+g =. 3 : '+/ C * y ^ E'
+
+x =. 2
+
+f x
+
+g x
