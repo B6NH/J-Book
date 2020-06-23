@@ -14,7 +14,7 @@ jpath '~user'
 
 0!:1 < scriptdir,'example.ijs'
 
-NB. 0!:0 < scriptdir,'example.ijs'
+0!:0 < scriptdir,'example.ijs'
 
 load < scriptdir,'example.ijs'
 
@@ -96,5 +96,50 @@ load scriptdir,'ex5.ijs'
 
 18 !: 4 < 'base'
 
-NB. 26.6 Repeated Loading, and How to Avoid It
-NB. ...
+(0 : 0) (1!:2) < scriptdir,'first.ijs'
+  require scriptdir, 'second.ijs'
+  a =: a + 1
+)
+
+(0 : 0) (1!:2) < scriptdir, 'second.ijs'
+  b  =: b + 1
+)
+
+(a =. 0),(b =. 0)
+
+load scriptdir, 'first.ijs'
+
+a,b
+
+load scriptdir,'first.ijs'
+
+a,b
+
+,. _4 {. 4!:3 ''
+
+i =. 4!:4 < 'plus'
+
+i
+
+i { 4!:3 ''
+
+,. 9 {. 4 !: 3 ''
+
+# nl_z_ ''
+
+6 6 $ 'f' nl_z_ ''
+
+jpath '~config/startup.ijs'
+
+(0 : 0)  (1 !: 2) < jpath '~config/startup.ijs'
+  is_int    =: 4 = 3 !: 0
+  is_char   =: 2 = 3 !: 0
+  is_number =: 1 4 8 16 64 128  e.~  3!:0
+  is_scalar =: 0 = # @: $
+  is_list   =: 1 = # @: $
+  is_string =: is_char *. is_list
+)
+
+,. 11 {. 4 !: 3 ''
+
+is_string 'hello'
