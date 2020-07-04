@@ -78,5 +78,79 @@ U
 
 view U
 
-NB. 30.6 Sparse and Dense Axes
-NB. ...
+saw =. ,0
+
+W =. 1 $. 3 5; saw ; INTEGERZERO
+
+W =. 4 5 6 (0 1; 0 2; 1 3) } W
+
+view W
+
+W
+
+saz =. ,1
+
+Z =. 1 $. 3 5; saz; INTEGERZERO
+
+Z =. 4 5 6 (0 1; 0 2; 1 3) } Z
+
+view Z
+
+Z
+
+U
+
+4 $. U
+
+5 $. U
+
+0 $. U
+
+'Pa Qu Ro Sy' =. s: ' Paris Quebec Rome Sydney'
+
+'Ap Ba Ch Da' =. s: ' Apples Bananas Cherries Damsons'
+
+R =. (". ;. _2) 0 : 0
+  Ap ; Pa; 99
+  Ap ; Qu ; 50
+  Ba ; Qu ; 10
+  Ch ; Ro ; 19
+  Da ; Sy ; 110
+  Da ; Pa ; 88
+)
+
+R
+
+] Fru =.  > ~. 0 { |: R
+
+] Cit =. > ~. 1 { |: R
+
+] r =. Fru i. > 0 { |: R
+
+] c =. Cit i. > 1 { |: R
+
+] v =. > 2 { |: R
+
+A =. (1 & $.) (#Fru) , (#Cit)
+
+A =. v (<"1 r,.c) } A
+
+view A
+
+(a:, <"0 Cit), (<"0 Fru) ,. (<"0 view A)
+
++/ A
+
+view +/ A
+
+A
+
+] INDS =. 4 $. A
+
+] VALS =. 5 $. A
+
+] c0 =. (0 { |: INDS) { Fru
+
+] c1 =. (1 { |: INDS) { Cit
+
+(<"0 c0) ,. (<"0 c1) ,. (<"0 VALS)
