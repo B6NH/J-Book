@@ -1,2 +1,3 @@
 # J-Book
-An Introduction to the J Programming Language
+
+Examples from book "Learning J: An Introduction to the J Programming Language" by Roger Stokes
